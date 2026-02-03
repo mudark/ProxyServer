@@ -12,7 +12,8 @@
     "allowImportingTsExtensions": false, // 이제 true일 필요가 없습니다.
     "noEmit": true,
     "target": "ESNext",
-    "skipLibCheck": true,
+    "skipLibCheck": true,         // 모든 라이브러리 체크 생략
+    "verbatimModuleSyntax": false,
     "esModuleInterop": true,
     "types": [],
     // For nodejs:
@@ -44,5 +45,6 @@
     "isolatedModules": true,
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force"
-  }
+  },
+  "exclude": ["node_modules"]
 }
