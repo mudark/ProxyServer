@@ -8,3 +8,12 @@ interface Goal {
   content: string;
   expired_day: string;
 }
+interface User {
+  id: string;
+  pw: string;
+  name: string;
+}
+interface UserDto {
+  id: string;
+  name: string;
+}
