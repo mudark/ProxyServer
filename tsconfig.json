@@ -7,11 +7,13 @@
 
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
-    "module": "nodenext",
-    "moduleResolution": "nodenext",  // 파일을 찾는 방식을 'Node' 방식으로 설정
-    "allowImportingTsExtensions": true, // 에러 메시지가 언급한 설정을 확실히 꺼줌
-    "noEmit": true, // Vercel 빌드 시 충돌 방지
-    "target": "esnext",
+    "module": "ESNext",
+    "moduleResolution": "Bundler", 
+    "allowImportingTsExtensions": false, // 이제 true일 필요가 없습니다.
+    "noEmit": true,
+    "target": "ESNext",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
     "types": [],
     // For nodejs:
     // "lib": ["esnext"],
@@ -42,7 +44,6 @@
     "esModuleInterop": true,
     "isolatedModules": true,
     "noUncheckedSideEffectImports": true,
-    "moduleDetection": "force",
-    "skipLibCheck": true,
+    "moduleDetection": "force"
   }
 }
