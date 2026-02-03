@@ -1,6 +1,6 @@
 import { type Request, type Response } from "express";
-import { readFromNotion, updateToNotion } from "../apis/notion";
-import { jwtService } from "../utils/jwtService";
+import { readFromNotion, updateToNotion } from "../apis/notion.js";
+import { jwtService } from "../utils/jwtService.js";
 
 const getUsers = async ():Promise<User[]> => {
   const results = await readFromNotion("users");
