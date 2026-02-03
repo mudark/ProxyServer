@@ -1,8 +1,8 @@
 import express from 'express';
 import cors from 'cors';
-import { PORT } from '../src/config.js'
-import { saveToNotion, getFromNotion } from '../src/notion/data.js';
-import { logIn, signUp, authJwt, modifyUser } from '../src/notion/auth.js';
+import { saveToNotion, getFromNotion } from '../src/notion/data';
+import { logIn, signUp, authJwt, modifyUser } from '../src/notion/auth';
+import { PORT } from '../src/config';
 
 const app = express();
 
@@ -18,7 +18,6 @@ app.post('/notion/jwt',authJwt);
 app.put('/notion/name',modifyUser);
 
 if (process.env.NODE_ENV !== 'production') {
-  const PORT = process.env.PORT || 3000;
   app.listen(PORT, () => {
     console.log(`로컬 서버 실행 중: http://localhost:${PORT}`);
   });
