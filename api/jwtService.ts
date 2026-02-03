@@ -1,5 +1,5 @@
 import jwt from "jsonwebtoken";
-import { JWT_SECRET } from "../config.js";
+import { JWT_SECRET } from "./config.js";
 
 function isUserDto(payload: any): payload is UserDto {
   return payload && typeof payload.id === 'string' && typeof payload.name === 'string';

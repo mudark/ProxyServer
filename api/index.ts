@@ -1,8 +1,8 @@
 import express from 'express';
 import cors from 'cors';
-import { saveToNotion, getFromNotion } from './src/notion/data';
-import { logIn, signUp, authJwt, modifyUser } from './src/notion/auth';
-import { PORT } from './src/config';
+import { saveToNotion, getFromNotion } from './data.js';
+import { logIn, signUp, authJwt, modifyUser } from './auth.js';
+import { PORT } from './config.js';
 
 const app = express();
 
