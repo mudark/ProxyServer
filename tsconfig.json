@@ -8,13 +8,12 @@
     "skipLibCheck": true,
     "verbatimModuleSyntax": false,
     "esModuleInterop": true,
-    "types": [],
     "sourceMap": true,
     "jsx": "react-jsx",
     "isolatedModules": true,
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force"
   },
-  "include": ["api", "src", "config.ts", "index.ts"],
+  "include": ["api", "src", "config.ts", "index.ts", "types.ts"],
   "exclude": ["node_modules"]
 }
