@@ -15,6 +15,6 @@
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force"
   },
-  "include": ["api", "src"],
+  "include": ["api", "src", "config.ts", "index.ts"],
   "exclude": ["node_modules"]
 }

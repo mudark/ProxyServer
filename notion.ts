@@ -1,4 +1,4 @@
-import { NOTION_TOKEN, NOTION_DB_ID } from './config.js';
+import { NOTION_TOKEN, NOTION_DB_ID } from '../config.js';
 import axios from 'axios';
 
 const notion_client = axios.create({
