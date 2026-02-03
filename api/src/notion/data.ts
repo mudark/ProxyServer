@@ -1,5 +1,5 @@
 import { type Request, type Response } from 'express';
-import { readFromNotion, updateToNotion } from '../apis/notion.js';
+import { readFromNotion, updateToNotion } from '../apis/notion';
 
 export const getFromNotion = async (req: Request, res: Response) => {
   const { name } = req.query;
